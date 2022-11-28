@@ -1,0 +1,48 @@
+<div class="high">
+    <app-main-nav></app-main-nav>
+    <div class="image">
+      <div class="register">
+        <div class="container col-md-5">
+          <h1 class="text-uppercase" style="color:rgb(26, 29, 81);"><b>Registration</b></h1>
+          <form (ngSubmit)="userRegister()"ngNativeValidate>
+            
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label" style="color:rgb(84, 24, 61);"><b>Name</b></label>
+              <input type="text" [(ngModel)]="user.name" class="form-control" maxlength="32" pattern="[A-Za-z]" id="name" name="name" required>
+            </div>
+    
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                style="color:rgb(86, 27, 55);"><b>Location</b></label>
+              <input type="text" class="form-control" pattern="[A-Za-z]"id="location" name="location" [(ngModel)]="user.location">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label" style="color:rgb(63, 19, 45);"><b>Email</b></label>
+              <input type="email" required class="form-control" id="email" name="email" [(ngModel)]="user.email">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label" style="color:rgb(62, 16, 49);"><b>Contact</b></label>
+              <input type="number" class="form-control" pattern="[789][0-9]{9}"  id="contact" name="contact" [(ngModel)]="user.contact">
+            </div>
+    
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                style="color:rgb(84, 29, 63);"><b>Password</b></label>
+              <input type="password" class="form-control" id="password" name="password" [(ngModel)]="user.password" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required> 
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label" style="color:rgb(96, 28, 78);"><b>Confirm
+                  Password</b></label>
+              <input type="password" class="form-control" id="cpassword" name="cpassword" [(ngModel)]="user.cpassword" >
+            </div>
+    
+            <button type="submit" class="btn btn-primary" style="color:aliceblue;"><b>Register</b></button>
+          </form>
+        </div>
+    
+        <section class="text-center">
+          <button routerLink="/login"> Already Have an Account</button>
+        </section>
+      </div>
+    </div>
+    </div>

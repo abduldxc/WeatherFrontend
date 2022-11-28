@@ -1,0 +1,34 @@
+<div class="table text-white">
+    <div *ngIf="viewMode">
+      <div *ngIf="currentWeather.city">
+        <h4>Weather Details</h4>
+        <div>
+          <label><strong>City:</strong></label> {{ currentWeather.city }}
+        </div>
+        <div>
+          <label><strong>Temperature:</strong></label>
+          {{ currentWeather.temperature }}
+        </div>
+        <div>
+          <label><strong>Humidity:</strong></label>
+          {{ currentWeather.humidity }}
+        </div>
+        <div>
+          <label><strong>Pressure:</strong></label>
+          {{ currentWeather.pressure}}
+        </div>
+        <div>
+          <label><strong>Sunrise:</strong></label>
+          {{ currentWeather.sunrise }}
+        </div>
+        <div>
+          <label><strong>Sunset:</strong></label>
+          {{ currentWeather.sunset}}
+        </div>
+        <div>
+          <label><strong>Geocoords:</strong></label>
+          {{ currentWeather.geocoords }}
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,32 @@
+.list {
+    text-align: center;
+    max-width: 750px;
+    padding-top: 3%;
+    margin: auto;
+  }
+  
+  .back{
+    padding-left: 30%;
+    
+  }
+  .stop{
+    background-image: url('../../assets/back3.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+  
+  }
+  .messagebutton{
+    padding-top: 29%;
+  }
+  .heading{
+    padding-left: 30%;
+  }
+  .list-group{
+    padding-left: 30%;
+  }
+
+  .map{
+    left: 100%;
+  }

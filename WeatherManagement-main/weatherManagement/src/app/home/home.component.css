@@ -1,0 +1,21 @@
+.info{
+
+    margin-top: 4rem ;
+
+}
+
+.welcome{
+
+   
+
+    background-image: url("../../assets/cloud1.jpg");
+
+    width: auto;
+
+    padding-bottom: 27rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 5rem;
+
+}

@@ -1,0 +1,12 @@
+.register{
+    margin-top: 5rem;
+}
+.high{
+
+    display: block;
+      background-image: url('../../assets/back1.jpg');
+      background-position: center;
+      background-size: cover;
+      height: 150vh;
+      background-repeat: no-repeat;
+}
